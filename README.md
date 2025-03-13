@@ -1,7 +1,7 @@
 # thumbor-next
 ## Alpha - not to be used in production - unless you like it spicey
 
-A modern Thumbor client optimized for Next.js applications, with built-in TypeScript support and React components.
+A modern Thumbor client optimised for Next.js applications, with built-in TypeScript support and React components.
 
 ## Features
 
