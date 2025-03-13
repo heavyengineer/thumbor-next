@@ -1,0 +1,78 @@
+{
+  "name": "thumbor-next",
+  "version": "0.1.0",
+  "description": "Thumbor client optimised for Next.js applications",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./react": {
+      "require": "./dist/react.js",
+      "import": "./dist/react.mjs",
+      "types": "./dist/react.d.ts"
+    }
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "lint": "eslint src/**/*.ts",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heavyengineer/thumbor-next.git"
+  },
+  "keywords": [
+    "thumbor",
+    "nextjs",
+    "image",
+    "optimisation",
+    "image-processing",
+    "react"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heavyengineer/thumbor-next/issues"
+  },
+  "homepage": "https://github.com/heavyengineer/thumbor-next#readme",
+  "devDependencies": {
+    "@types/node": "^20.17.24",
+    "@types/react": "^18.3.18",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.0.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
+    "next": "^14.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "vitest": "^1.6.1"
+  },
+  "peerDependencies": {
+    "next": ">=13.0.0",
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "next": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
