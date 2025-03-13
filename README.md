@@ -1,6 +1,6 @@
 # thumbor-next
 
-A modern Thumbor client optimized for Next.js applications, with built-in TypeScript support and React components.
+A modern Thumbor client optimised for Next.js applications, with built-in TypeScript support and React components.
 
 ## Features
 
